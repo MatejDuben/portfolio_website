@@ -33,6 +33,6 @@ mail($recipient, $subject, $email_content, $email_headers);
 
 
 // Presmerovanie na stránku ak bolo odoslanie úspešné
-header("Location:https://matejduben.github.io/portfolio_website/");
+header("Location:https://matejduben.github.io/portfolio_website/email_sender.php");
 
 ?>
