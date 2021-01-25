@@ -27,7 +27,7 @@ $email_content .= "Správa:\n$message\n";
 $email_headers = "From: $name <$email>";
 
 // Odoslanie emailu
-ma// Odoslanie emailu
+// Odoslanie emailu
 mail($recipient, $subject, $email_content, $email_headers);
 
 // Presmerovanie na stránku ak bolo odoslanie úspešné
