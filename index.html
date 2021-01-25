@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duben</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@200&display=swap" rel="stylesheet">
+  
+  <!--font awesome links-->
+  <link href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" rel="stylesheet">
+  <link href="node_modules/@fortawesome/fontawesome-free/css/brands.css" rel="stylesheet">
+  <link href="node_modules/@fortawesome/fontawesome-free/css/solid.css" rel="stylesheet">
+
+
+  
+	<link rel="stylesheet" href="static/css/reset.css"> <!-- CSS reset -->
+	<script src="static/js/modernizr.js"></script> <!-- Modernizr -->
+
+
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
+</head>
+<body>
+  <!-- loader -->
+  <div id="loader"></div>
+
+
+  <nav class="no-responsive-nav">
+    <div class="logo-wrapper">
+      <a href="" id="logo" class="no-res-logo">Duben</a>
+    </div>
+    <ul class="nav-links-wrapper">
+      <li class="nav-item" id="item1"><a href="#section1" class="link1">Domov</a></li>
+      <li class="nav-item" id="item2"><a href="#section2" class="link2">Skills</a></li>
+      <li class="nav-item" id="item3"><a href="#section3" class="link3">O mne</a></li>
+      <li class="nav-item" id="item4"><a href="#section4" class="link4">Benefity</a></li>
+      <li class="nav-item" id="item5" ><a href="#section5" class="link5">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <nav class="responsive-nav">
+    <div class="res-logo-wrapper">
+      <a href="" id="logo">Duben</a>
+    </div>
+    <ul class="res-links-wrapper">
+      <li class="nav-item " ><a href="#section1" class="r-link1">Domov</a></li>
+      <li class="nav-item" ><a href="#section2" class="r-link2">Skills</a></li>
+      <li class="nav-item" ><a href="#section3" class="r-link3">O mne</a></li>
+      <li class="nav-item" "><a href="#section4" class="r-link4">Benefity</a></li>
+      <li class="nav-item" ><a href="#section5" class="r-link5">Kontakt</a></li>
+    </ul>
+    <div class="hamburger-rg">
+      <i class="fas fa-bars fa-4x"></i>
+    </div>
+  </nav>
+
+  <div id="cd-vertical-nav" class="section-dots">
+    <ul>
+      <li>
+        <a href="#section1" data-number="1">
+          <span class="cd-dot"></span>
+          <span class="cd-label v-link1">Domov</span>
+        </a>
+      </li>
+      <li>
+        <a href="#section2" data-number="2">
+          <span class="cd-dot"></span>
+          <span class="cd-label v-link2">Skills</span>
+        </a>
+      </li>
+      <li>
+        <a href="#section3" data-number="3">
+          <span class="cd-dot"></span>
+          <span class="cd-label v-link3">O mne</span>
+        </a>
+      </li>
+      <li>
+        <a href="#section4" data-number="4">
+          <span class="cd-dot"></span>
+          <span class="cd-label v-link4">Benefity</span>
+        </a>
+      </li>
+      <li>
+        <a href="#section5" data-number="5">
+          <span class="cd-dot"></span>
+          <span class="cd-label v-link5">Kontakt</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+  <main >
+    
+    <section class="header-sec cd-section" id="section1" data-number="1">
+      <div class="header-sign">
+        D
+      </div>
+      <div class="header-info-wrapper">
+        <h1 class="header-title">Vítam vás na mojej stránke !</h1>
+        <p class="header-paragraph">
+             Ak by ste uvažovali nad vlastným webom, blogom alebo inou stránkou budem rád ak si vyberiete mňa. V sekcii benefity sa dozviete zopár informácii, v pripade záujmu mi môžete napísať email.
+        </p>
+        <a href="#section2" class="btn header-btn-more">Viac</a>
+      </div>
+    </section>
+
+
+    <section class="myskills-sec cd-section" id="section2" data-number="2">
+      
+      <div class="left-side bg-of-diagram">
+        
+        <div class="diagram-wrapper">
+          <div class="knowing">
+            <h3>HTML</h3>
+            <div class="line">
+              <div class="know-line html-knowing"></div>
+            </div>
+            <div class="percents" ><span id="html-percent"></span></div>
+          </div>
+          <div class="knowing">
+            <h3>CSS</h3>
+            <div class="line">
+              <div class="know-line css-knowing"></div>
+            </div>
+            <div class="percents"><span id="css-percent"></span></div>
+          </div>
+          <div class="knowing">
+            <h3>JavaScript</h3>
+            <div class="line">
+              <div class="know-line js-knowing"></div>
+            </div>
+            <div class="percents" ><span id="js-percent"></span></div>
+          </div>
+          <div class="knowing">
+            <h3>Python</h3>
+            <div class="line">
+              <div class="know-line py-knowing"></div>
+            </div>
+            <div class="percents"><span id="py-percent"></span></div>
+          </div>
+        </div>
+    
+      </div>
+
+      <div class="right-side">
+        <div class="info-wrapper">
+          <h1 class="title skills-main-title">Moje skills v programovaní</h1>
+          <div class="q-a-wraper">
+            <h2 class="smt1">Aké jazyky používam ?</h2>
+            <p class="smp1">
+              Ovládam viacero programovacích jazykov ako HTML,  CSS,  JavaScript, Python.
+            </p>
+          </div>
+          <div class="q-a-wraper">
+            <h2 class="smt2">Ktorý jazyk na čo používam ?</h2>
+            <p class="smp2">
+              Na tvorbu a dizajn stránok používam hlavne HTML a CSS. Na animácie a viac náročnejší dizajn JavaScript. A pokiaľ je potreba databázu tak tam používam Python framework Django.
+            </p>
+          </div>
+          <div class="q-a-wraper">
+            <h2 class="smt3">Čo plánujem do budúcna ?</h2>
+            <p class="smp3">
+              Do budúcna by som sa chcel zlepšiť v JavaScripte a naučiť sa React JS.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+
+    <section class="aboutme-sec cd-section" id="section3" data-number="3">
+
+      <div class="content-wrapper">
+        <img src="static/img/me_image.jpg" alt="Moja fotka">
+        <div class="line-wrapper">
+          <div class="line"></div>
+        </div>
+        <div class="info-wrapper">
+          <h1 class="amt">Volám sa Matej Duben a som programátor.</h1>
+          <p class="amp">
+            Volám sa Matej, učím sa programovať a vytvárať webové stránky. Programovanie ma veľmi zaujímalo už v mojich dvanástich. Vtedy som sa začal podla knižky ktorú som dostal učiť písať prvé riadky kódu. Učil som sa jazyk Pascal. Viem nieje to nič užasné, neskôr som však prešiel na python v ktorom už čosi viem spraviť a asi pred rokom som sa rozhodol že sa začnem učit tvoriť stránky pomocou HTML, CSS a JS.            
+          </p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/matej_duben/" target="_blank">
+              <i class="fab fa-instagram fa-4x"></i>
+            </a>
+            <a href="https://www.facebook.com/matej.duben.18/" target="_blank">
+              <i class="fab fa-facebook-square fa-4x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="benefits-sec cd-section" id="section4" data-number="4">
+      <h1 class="section-title">
+        Benefity pre vás
+      </h1>
+      <div class="row-wrapper">
+        <div class="box">
+
+          <div>
+
+            <h1 class="title bmt1">Nízka cena</h1>
+            <p class="bmp1">
+              Som začínajúci programátor, takže si nepýtam velké peniaze. Kompletnú stránku v Html, Css možem spraviť do 180 eur. Poprípade dohoda.
+            </p>
+
+          </div>
+        </div>
+        <div class="box">
+          <div>
+            <h1 class="title bmt2">Web presne podľa vás</h1>
+            <p class="bmp2">
+              Vždy si najprv s klientom dohodnem stretnutie osobné alebo online, aby som podrobne zistil čo všetko chce mať na svojej stránke. 
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div>
+            <h1 class="title bmt3">Spolahlivosť</h1>
+            <p class="bmp3">
+              Nemusíťe sa obávať že by ste svoju stránku dostali po termíne na ktorom sa dohodneme. Som vždy načas!
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="#section5" class="btn btn-to-contact">Chcem svoju stránku !</a>
+
+    </section>
+
+    <section class="contact-sec" id="section5" data-number="5">
+      
+      <div class="content-wrapper">
+        <h1 class="title contact-main-title">Ak potrebujete webovú stránku</h1>
+        <h3 class="module-title contact-sub-title">Napíšte mi</h3> 
+
+        <form action="" method="post" autocomplete="off">
+          <div class="form__group field">
+            <input type="text" class="form__field " placeholder="Meno a priezvisko"  name="name" id='name' required />
+            <label for="name" class="form__label" id="l-name">Meno a priezvisko</label>
+          </div>
+
+          <div class="form__group field">
+            <input type="email" class="form__field " placeholder="Email"  name="email" id='email' required />
+            <label for="name" class="form__label" id="l-email">Váš email</label>
+          </div>
+          
+          <textarea name="" id="message-inp" cols="30" rows="10" placeholder="Správa" spellcheck="true"></textarea>
+
+          <button type="submit" class="btn send-btn">Odoslať</button> 
+          
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    
+    <p>&copy; <span id="current-year"></span> Duben. <span id="all-rights-reserved">Všekty Práva Vyhradené</span></p>
+    <p>Created by Matej Duben</p>
+
+    <div class="set-lan">
+      <div class="sk-wrapper">
+        <input type="radio" name="" id="sk" checked="checked">
+        <label for="sk" class="current-lan l sk-label">sk</label>
+      </div>
+      <div class="en-wrapper">
+        <input type="radio" name="" id="en">
+        <label for="en" class="l en-label">en</label>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
+<script src="static/Js/jquery-2.1.1.js"></script>
+<script src="static/Js/main.js"></script> <!-- Resource jQuery -->
+
+
+</html>
