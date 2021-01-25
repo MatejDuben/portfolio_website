@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="static/img/portfolio_logo.png" type="image/x-icon">
   <title>Duben</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@200&display=swap" rel="stylesheet">
   
   <!--font awesome links-->
   <link href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" rel="stylesheet">
   <link href="node_modules/@fortawesome/fontawesome-free/css/brands.css" rel="stylesheet">
   <link href="node_modules/@fortawesome/fontawesome-free/css/solid.css" rel="stylesheet">
+
 
   
 	<link rel="stylesheet" href="static/css/reset.css"> <!-- CSS reset -->
@@ -40,7 +43,7 @@
 
   <nav class="responsive-nav">
     <div class="res-logo-wrapper">
-      <a href="" id="logo" >Duben</a>
+      <a href="" id="logo">Duben</a>
     </div>
     <ul class="res-links-wrapper">
       <li class="nav-item " ><a href="#section1" class="r-link1">Domov</a></li>
@@ -183,10 +186,10 @@
             Volám sa Matej, učím sa programovať a vytvárať webové stránky. Programovanie ma veľmi zaujímalo už v mojich dvanástich. Vtedy som sa začal podla knižky ktorú som dostal učiť písať prvé riadky kódu. Učil som sa jazyk Pascal. Viem nieje to nič užasné, neskôr som však prešiel na python v ktorom už čosi viem spraviť a asi pred rokom som sa rozhodol že sa začnem učit tvoriť stránky pomocou HTML, CSS a JS.            
           </p>
           <div class="social-links">
-            <a href="https://www.instagram.com/matej_duben/" target="_blank" title="Instagram link">
+            <a href="https://www.instagram.com/matej_duben/" target="_blank">
               <i class="fab fa-instagram fa-4x"></i>
             </a>
-            <a href="https://www.facebook.com/matej.duben.18/" target="_blank" title="Facebook link">
+            <a href="https://www.facebook.com/matej.duben.18/" target="_blank">
               <i class="fab fa-facebook-square fa-4x"></i>
             </a>
           </div>
@@ -234,18 +237,11 @@
 
     <section class="contact-sec" id="section5" data-number="5">
       
-      <div class="succes-sent">
-        <p class="notice"></p>
-        <button type="reset" class="btn" onclick="closeSendForm()">ok,zatvorit</button>
-      </div>
-
-
       <div class="content-wrapper">
         <h1 class="title contact-main-title">Ak potrebujete webovú stránku</h1>
         <h3 class="module-title contact-sub-title">Napíšte mi</h3> 
 
         <form action="" method="post" autocomplete="off">
-
           <div class="form__group field">
             <input type="text" class="form__field " placeholder="Meno a priezvisko"  name="name" id='name' required />
             <label for="name" class="form__label" id="l-name">Meno a priezvisko</label>
@@ -256,7 +252,7 @@
             <label for="name" class="form__label" id="l-email">Váš email</label>
           </div>
           
-          <textarea name="message" id="message-inp" cols="30" rows="10" placeholder="Správa" spellcheck="true" required></textarea>
+          <textarea name="" id="message-inp" cols="30" rows="10" placeholder="Správa" spellcheck="true"></textarea>
 
           <button type="submit" class="btn send-btn">Odoslať</button> 
           
@@ -292,81 +288,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
 
-<script src="static/js/jquery-2.1.1.js"></script>
-<script src="static/js/main.js"></script> <!-- Resource jQuery -->
-<!--
-<script>
+<script src="static/Js/jquery-2.1.1.js"></script>
+<script src="static/Js/main.js"></script> <!-- Resource jQuery -->
 
-  var emailNotice = document.querySelector('.notice');
-  var contactBtn = document.querySelector('.send-btn');
-  var sendForm = document.querySelector('.succes-sent');
-  //SK message
-  if ("{{is_sent}}" === 'true' && language === false){
 
-    gsap.fromTo(sendForm, {
-        display: 'none',
-        opacity: 0,
-        scale: 0.1
-      },{
-        display: 'block',
-        opacity: 1,
-        scale: 1,
-        duration: 0.4
-      });
-
-    emailNotice.textContent = '{{succes_sent}}';
-  }
-  else if ("{{is_sent}}" === 'false' && language === false){
-    gsap.fromTo(sendForm, {
-        display: 'none',
-        opacity: 0,
-        scale: 0.1
-      },{
-        display: 'block',
-        opacity: 1,
-        scale: 1,
-        duration: 0.4
-      });
-    emailNotice.textContent = '{{no_succes_sent}}';
-  };
-
-  // EN message
-  if ("{{is_sent}}" === 'true' && language){
-
-    gsap.fromTo(sendForm, {
-        display: 'none',
-        opacity: 0,
-        scale: 0.1
-      },{
-        display: 'block',
-        opacity: 1,
-        scale: 1,
-        duration: 0.4
-      });
-
-    emailNotice.textContent = '{{succes_sent_en}}';
-    }
-  else if ("{{is_sent}}" === 'false' && language){
-    gsap.fromTo(sendForm, {
-        display: 'none',
-        opacity: 0,
-        scale: 0.1
-      },{
-        display: 'block',
-        opacity: 1,
-        scale: 1,
-        duration: 0.4
-      });
-    emailNotice.textContent = '{{no_succes_sent_en}}';
-    };
-      
-  
-
-  function closeSendForm(){
-    let sendForm = document.querySelector('.succes-sent');
-    sendForm.style.display = 'none';
-  };
-
-</script>
--->
 </html>
