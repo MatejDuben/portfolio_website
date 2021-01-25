@@ -8,7 +8,8 @@ $message = trim($_POST["message"]);
 
 // Kontroluje dáta - ak nastala chyba pri odoslaní presmeruje na chybnú adresu
 if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-header("Location: https://matejduben.000webhostapp.com#section1");
+  header("Location: https://matejduben.github.io/portfolio_website/");
+
 exit;
 }
 
@@ -30,8 +31,8 @@ $email_headers = "From: $name <$email>";
 // Odoslanie emailu
 mail($recipient, $subject, $email_content, $email_headers);
 
+
 // Presmerovanie na stránku ak bolo odoslanie úspešné
-header("Location:https://matejduben.000webhostapp.com");
+header("Location:https://matejduben.github.io/portfolio_website/");
 
 ?>
-

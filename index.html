@@ -301,7 +301,7 @@
   var contactBtn = document.querySelector('.send-btn');
   var sendForm = document.querySelector('.succes-sent');
   //SK message
-  if ("{{is_sent}}" === 'true' && language === false){
+  if ("{{is_sent}}" === 'true'){
 
     gsap.fromTo(sendForm, {
         display: 'none',
@@ -316,7 +316,7 @@
 
     emailNotice.textContent = '{{succes_sent}}';
   }
-  else if ("{{is_sent}}" === 'false' && language === false){
+  else if ("{{$is_sent}}" === 'false'){
     gsap.fromTo(sendForm, {
         display: 'none',
         opacity: 0,
@@ -330,36 +330,6 @@
     emailNotice.textContent = '{{no_succes_sent}}';
   };
 
-  // EN message
-  if ("{{is_sent}}" === 'true' && language){
-
-    gsap.fromTo(sendForm, {
-        display: 'none',
-        opacity: 0,
-        scale: 0.1
-      },{
-        display: 'block',
-        opacity: 1,
-        scale: 1,
-        duration: 0.4
-      });
-
-    emailNotice.textContent = '{{succes_sent_en}}';
-    }
-  else if ("{{is_sent}}" === 'false' && language){
-    gsap.fromTo(sendForm, {
-        display: 'none',
-        opacity: 0,
-        scale: 0.1
-      },{
-        display: 'block',
-        opacity: 1,
-        scale: 1,
-        duration: 0.4
-      });
-    emailNotice.textContent = '{{no_succes_sent_en}}';
-    };
-      
   
 
   function closeSendForm(){
@@ -367,7 +337,6 @@
     sendForm.style.display = 'none';
   };
 
-</script>
--->
+</script>-->
 </html>
 
